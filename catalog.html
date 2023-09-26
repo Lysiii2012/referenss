@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Catalog</title>
+</head>
+<body>
+   <header  style="background: url(./img//brend/bg-brend.png) no-repeat; background-position-x: center;">
+    <div class="container header-nav">
+        <div class="nav-box">
+            <div>
+                <a href="#" class="nav-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 29 29" fill="none">
+                    <path d="M6.0415 8.45801H22.9582" stroke="white" stroke-linecap="round"/>
+                    <path d="M6.0415 14.5H22.9582" stroke="white" stroke-linecap="round"/>
+                    <path d="M6.0415 20.542H22.9582" stroke="white" stroke-linecap="round"/>
+                  </svg>
+            </a>
+            <a href="#" class="logo">
+                <img src="./img/logo.svg" alt="">
+            </a>
+            </div>
+            
+            <nav>
+                <div class="nav-mobile">
+                    <div class="top-nav-mob">
+                        <div class="container-sm">
+                            <a href="#" class="close-nav">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M21.75 7.25L7.25 21.75" stroke="#131214" stroke-linecap="square" stroke-linejoin="round"/>
+                                <path d="M7.25 7.25L21.75 21.75" stroke="#131214" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        </div>
+                        
+                    </div>
+                    <div class="container-sm">
+                        <ul>
+                        <li><a class="active" href="#"><span>Бренды</span> <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M14.5 7.25L14.5 21.75" stroke="#B7AB98" stroke-linecap="square"/>
+                                <path d="M21.75 14.5L7.25 14.5" stroke="#B7AB98" stroke-linecap="square"/>
+                              </svg>
+                        </span></a></li>
+                        <li><a href="#"><span>каталог</span> <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M14.5 7.25L14.5 21.75" stroke="#B7AB98" stroke-linecap="square"/>
+                                <path d="M21.75 14.5L7.25 14.5" stroke="#B7AB98" stroke-linecap="square"/>
+                              </svg>
+                        </span></a></li>
+                        <li><a href="#"><span>Компания</span> <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M14.5 7.25L14.5 21.75" stroke="#B7AB98" stroke-linecap="square"/>
+                                <path d="M21.75 14.5L7.25 14.5" stroke="#B7AB98" stroke-linecap="square"/>
+                              </svg>
+                        </span></a></li>
+                        <li><a href="#"><span>Контакты</span> <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M14.5 7.25L14.5 21.75" stroke="#B7AB98" stroke-linecap="square"/>
+                                <path d="M21.75 14.5L7.25 14.5" stroke="#B7AB98" stroke-linecap="square"/>
+                              </svg>
+                        </span></a></li>
+                    </ul>
+                    </div>
+                     
+                </div>
+               
+                
+                <ul>
+                    <li><a class="active" href="#">Бренды</a></li>
+                    <li><a href="#">каталог</a></li>
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="nav-last-box">
+                <a href="#">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M5.19229 16.2266L13.3037 23.8464C13.5693 24.0959 13.7022 24.2207 13.8567 24.2584C13.9508 24.2813 14.0489 24.2813 14.1429 24.2584C14.2975 24.2207 14.4303 24.0959 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#B7AB98"/>
+                      </svg></span>
+                    <span>10</span>
+                </a>
+                <a href="#">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M9.33325 9.33301V9.33301C9.33325 6.75568 11.4226 4.66634 13.9999 4.66634V4.66634C16.5772 4.66634 18.6666 6.75568 18.6666 9.33301V9.33301" stroke="#B7AB98" stroke-linecap="round"/>
+                        <path d="M4.66675 9.33301H23.3334V17.4997C23.3334 20.7995 23.3334 22.4494 22.3083 23.4745C21.2832 24.4997 19.6332 24.4997 16.3334 24.4997H11.6667C8.36692 24.4997 6.717 24.4997 5.69187 23.4745C4.66675 22.4494 4.66675 20.7995 4.66675 17.4997V9.33301Z" stroke="#B7AB98"/>
+                      </svg></span>
+                    <span>10</span>
+                </a>
+                <ul class="lang">
+                    <li>
+                        <a href="#">
+                            <span>en</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="24" viewBox="0 0 10 24" fill="none">
+                             <path d="M4.80794 14.7695L1.09346 10.3121C0.659238 9.79109 1.02976 9 1.70803 9L8.29197 9C8.97024 9 9.34076 9.79108 8.90654 10.3121L5.19206 14.7695C5.09211 14.8895 4.90789 14.8895 4.80794 14.7695Z" fill="#EB5939"/>
+                            </svg></span>
+                        </a>
+                        <ul>
+                        <li><a href="#">ru</a></li>
+                        <li><a href="#">en</a></li>
+                    </ul>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+         <section class="main-catalog container-sm">
+            <div class="main-catalog-box">
+                <div>
+                    <h3>
+                        <span>Эксклюзивное Музыкальное </span>
+                        <span>Оборудование Высшего Класса</span>
+                    </h3>
+                    <p>Ознакомьтесь с нашим обширным каталогом продукции, включающим в себя профессиональную акустику, виниловые проигрыватели и множество другого оборудования от ведущих мировых брендов в области аудио.</p>
+                </div>
+                 <a href="#" class="btn-search"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <path d="M25 41.667L25.3536 42.0205L25 42.3741L24.6464 42.0205L25 41.667ZM24.5 10.417C24.5 10.1409 24.7239 9.91699 25 9.91699C25.2761 9.91699 25.5 10.1409 25.5 10.417L24.5 10.417ZM37.8536 29.5205L25.3536 42.0205L24.6464 41.3134L37.1464 28.8134L37.8536 29.5205ZM24.6464 42.0205L12.1464 29.5205L12.8536 28.8134L25.3536 41.3134L24.6464 42.0205ZM24.5 41.667L24.5 10.417L25.5 10.417L25.5 41.667L24.5 41.667Z" fill="#B7AB98"/>
+                </svg></a> 
+            </div>
+            
+      
+        
+        </section>
+   </header>
+   <section class="catalog-box">
+    <div class="container-sm">
+        <ul class="breadcrumbs">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+        </ul>
+        <h2>Каталог</h2>
+        <div class="catalog">
+            <div class="catalog-filter">
+                <div>
+                    <a href="#" class="filter-btn">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 7L20 7" stroke="#B7AB98" stroke-linecap="round"/>
+                                <path d="M4 7L8 7" stroke="#B7AB98" stroke-linecap="round"/>
+                                <path d="M17 17L20 17" stroke="#B7AB98" stroke-linecap="round"/>
+                                <path d="M4 17L12 17" stroke="#B7AB98" stroke-linecap="round"/>
+                                <circle cx="10" cy="7" r="2" transform="rotate(90 10 7)" stroke="#B7AB98" stroke-linecap="round"/>
+                                <circle cx="15" cy="17" r="2" transform="rotate(90 15 17)" stroke="#B7AB98" stroke-linecap="round"/>
+                              </svg>
+                        </span>
+                        <span>фильтры</span>
+                    </a>
+                </div>
+                <div class="filter-items">
+                    <div class="close-filter">
+                        <div class="container-sm">
+                            <span>фильтры</span>
+                        <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                            <path d="M21.75 7.25L7.25 21.75" stroke="#131214" stroke-linecap="square" stroke-linejoin="round"/>
+                            <path d="M7.25 7.25L21.75 21.75" stroke="#131214" stroke-linecap="square" stroke-linejoin="round"/>
+                          </svg></a>
+                        </div>
+                        
+                    </div>
+                    <a href="#" class="btn-brend">
+                        <span>Бренды</span> <span> <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                            <path d="M21.75 14.5L7.25 14.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                          </svg>
+                    </span></a>
+                    <div class="filter-brend">
+                        <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Raidho</span>
+                            
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Scansonic</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Gryphon Audio</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                           <span>MBL</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Nordost</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Stromtank</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Clearaudio</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Acoustic Signature</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Audionet</span>
+                          </label>
+                          
+                    </div>
+                    <h4>Цена</h4>
+                    <div class="filter-price">
+
+                    </div>
+                    <a href="#" class="btn-categore">
+                        <span>Категории</span> <span> <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                            <path d="M21.75 14.5L7.25 14.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                          </svg>
+                    </span></a>
+                    <div class="filter-categor">
+                        <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Винил</span>
+                            
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Акустические системы</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Усилители мощности</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                           <span>Предусилители</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Интегральный усилитель</span>
+                          </label>
+                    </div>
+                    <a href="#" class="btn-subcategory">
+                        <span>Подкатегория</span> <span> <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                            <path d="M21.75 14.5L7.25 14.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                          </svg>
+                    </span></a>
+                    <div class="filter-subcategory">
+                        <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Уселители мощности</span>
+                            
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Предуселители</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Интегральный усилитель</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                           <span>CD-проигрователи</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Фонокорректоры</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Аккустические системы</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Кабели</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Цифро-аналоговые</span>
+                          </label>
+                           <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Преобразователи</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" name="check">
+                            <span class="input-check"></span>
+                            <span>Аксессуары</span>
+                          </label>
+                    </div>
+                    <ul>
+                        <li><a href="#">Очистить</a></li>
+                        <li><a href="#">Применить</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-block">
+                <div>
+                    <ul>
+                        <li>
+                            <span>Предусилители</span>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 6L6 18" stroke="#131214" stroke-linecap="square" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="#131214" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <span>Интегральный усилитель</span>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 6L6 18" stroke="#131214" stroke-linecap="square" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="#131214" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <select class="form-control">
+                        <option selected="selected">Сортировка по умолчанию</option>
+                        <option>white</option>
+                        <option>purple</option>
+                    </select>
+                </div>
+                <div class="catalog-block-items">
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item-box">
+                        <div>
+                            <img src="./img/brend/iconProd.png" alt="">
+                        </div>
+                        <div>
+                            <span>Gryphon Audio</span>
+                        <h4>Apex Stereo</h4>
+                        <p>It has always been Gryphon’s mission to achieve Gryphon’s mission to achieve...</p>
+                        <button>1150$</button>
+                        <div class="item-hover-block">
+                            <a href="#">Купить</a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#fff" stroke-width="0.996029"></path>
+                                  </svg>
+                            </a>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <ul class="nav-catalog-items">
+                    <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                            <g opacity="0.5">
+                              <path d="M2 15.5L1.64645 15.1464L1.29289 15.5L1.64645 15.8536L2 15.5ZM27 16C27.2761 16 27.5 15.7761 27.5 15.5C27.5 15.2239 27.2761 15 27 15V16ZM11.6464 5.14645L1.64645 15.1464L2.35355 15.8536L12.3536 5.85355L11.6464 5.14645ZM1.64645 15.8536L11.6464 25.8536L12.3536 25.1464L2.35355 15.1464L1.64645 15.8536ZM2 16H27V15H2V16Z" fill="#B7AB98"/>
+                            </g>
+                          </svg>
+                    </a></li>
+                    <li><a href="#">
+                        1
+                    </a></li>
+                    <li><a href="#">
+                        2
+                    </a></li>
+                    <li><a class="active" href="#">
+                        3
+                    </a></li>
+                    <li><a href="#">
+                        4
+                    </a></li>
+                    <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                            <path d="M27 15.5L27.3536 15.1464L27.7071 15.5L27.3536 15.8536L27 15.5ZM2 16C1.72386 16 1.5 15.7761 1.5 15.5C1.5 15.2239 1.72386 15 2 15V16ZM17.3536 5.14645L27.3536 15.1464L26.6464 15.8536L16.6464 5.85355L17.3536 5.14645ZM27.3536 15.8536L17.3536 25.8536L16.6464 25.1464L26.6464 15.1464L27.3536 15.8536ZM27 16H2V15H27V16Z" fill="#B7AB98"/>
+                          </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   </section>
+   <div class="swiper-brend swiper-catalog">
+    <div class="container">
+        <p>Вас может заинтересовать:</p>
+        <div class="swiper-btn-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-3bb810941f3d1072e">
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                <g opacity="0.5">
+              <path d="M2 15L1.64645 14.6464L1.29289 15L1.64645 15.3536L2 15ZM27 15.5C27.2761 15.5 27.5 15.2761 27.5 15C27.5 14.7239 27.2761 14.5 27 14.5V15.5ZM11.6464 4.64645L1.64645 14.6464L2.35355 15.3536L12.3536 5.35355L11.6464 4.64645ZM1.64645 15.3536L11.6464 25.3536L12.3536 24.6464L2.35355 14.6464L1.64645 15.3536ZM2 15.5H27V14.5H2V15.5Z" fill="white"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="swiper galleryBrend swiper-initialized swiper-horizontal swiper-backface-hidden">
+        <div class="swiper-wrapper" id="swiper-wrapper-3bb810941f3d1072e" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+          <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 7" data-swiper-slide-index="0" style="margin-right: 12px;">
+            <div>
+                <img src="./img/index/b.png" alt="">
+            </div>
+          <div>
+            <span>Scansonic HD</span>
+            <h4>MB6 B</h4>
+            <p>The MB6 B is the Scansonic flagship speaker. </p>
+            <button>1150$</button>
+            <div class="swiper-hover-block">
+                <a href="#">Купить</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"></path>
+                      </svg>
+                </a>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 7" data-swiper-slide-index="1" style="margin-right: 12px;">
+            <div>
+                <img src="./img/index/b.png" alt="">
+            </div>
+          <div>
+            <span>Scansonic HD</span>
+            <h4>MB6 B</h4>
+            <p>The MB6 B is the Scansonic flagship speaker. </p>
+            <button>1150$</button>
+            <div class="swiper-hover-block">
+                <a href="#">Купить</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"></path>
+                      </svg>
+                </a>
+            </div>
+          </div>
+        </div>
+          <div class="swiper-slide" role="group" aria-label="3 / 7" data-swiper-slide-index="2" style="margin-right: 12px;">
+            <div>
+                <img src="./img/index/b.png" alt="">
+            </div>
+          <div>
+            <span>Scansonic HD</span>
+            <h4>MB6 B</h4>
+            <p>The MB6 B is the Scansonic flagship speaker. </p>
+            <button>1150$</button>
+            <div class="swiper-hover-block">
+                <a href="#">Купить</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"></path>
+                      </svg>
+                </a>
+            </div>
+          </div>
+          
+          </div>
+          <div class="swiper-slide" role="group" aria-label="4 / 7" data-swiper-slide-index="3" style="margin-right: 12px;">
+            <div>
+                <img src="./img/index/b.png" alt="">
+            </div>
+          <div>
+            <span>Scansonic HD</span>
+            <h4>MB6 B</h4>
+            <p>The MB6 B is the Scansonic flagship speaker. </p>
+            <button>1150$</button>
+            <div class="swiper-hover-block">
+                <a href="#">Купить</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"></path>
+                      </svg>
+                </a>
+            </div>
+          </div>
+          
+          </div>
+          <div class="swiper-slide" role="group" aria-label="5 / 7" data-swiper-slide-index="4" style="margin-right: 12px;">
+            <div>
+                <img src="./img/index/b.png" alt="">
+            </div>
+          <div>
+            <span>Scansonic HD</span>
+            <h4>MB6 B</h4>
+            <p>The MB6 B is the Scansonic flagship speaker. </p>
+            <button>1150$</button>
+            <div class="swiper-hover-block">
+                <a href="#">Купить</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"></path>
+                      </svg>
+                </a>
+            </div>
+          </div>
+          
+          </div>
+          <div class="swiper-slide" role="group" aria-label="6 / 7" data-swiper-slide-index="5" style="margin-right: 12px;">
+            <div>
+                <img src="./img/index/b.png" alt="">
+            </div>
+          <div>
+            <span>Scansonic HD</span>
+            <h4>MB6 B</h4>
+            <p>The MB6 B is the Scansonic flagship speaker. </p>
+            <button>1150$</button>
+            <div class="swiper-hover-block">
+                <a href="#">Купить</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"></path>
+                      </svg>
+                </a>
+            </div>
+          </div>
+          
+          </div>
+          <div class="swiper-slide" role="group" aria-label="7 / 7" data-swiper-slide-index="6" style="margin-right: 12px;">
+            <div>
+                <img src="./img/index/b.png" alt="">
+            </div>
+          <div>
+            <span>Scansonic HD</span>
+            <h4>MB6 B</h4>
+            <p>The MB6 B is the Scansonic flagship speaker. </p>
+            <button>1150$</button>
+            <div class="swiper-hover-block">
+                <a href="#">Купить</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"></path>
+                      </svg>
+                </a>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        <div class="swiper-btn-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-3bb810941f3d1072e">
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                <path d="M27 15L27.3536 14.6464L27.7071 15L27.3536 15.3536L27 15ZM2 15.5C1.72386 15.5 1.5 15.2761 1.5 15C1.5 14.7239 1.72386 14.5 2 14.5V15.5ZM17.3536 4.64645L27.3536 14.6464L26.6464 15.3536L16.6464 5.35355L17.3536 4.64645ZM27.3536 15.3536L17.3536 25.3536L16.6464 24.6464L26.6464 14.6464L27.3536 15.3536ZM27 15.5H2V14.5H27V15.5Z" fill="#B7AB98"></path>
+            </svg>
+        </div> 
+    </div>
+    </div>
+
+    <div class="string">
+        <p>Raidho.  Scansonic.  Gryphon Audio.  MBL.  Nordost.  Stromtank.  Clearaudio.  Acoustic Signature.  Audionet.  Raidho.  Scansonic.  Gryphon Audio.  MBL.  Nordost.  Stromtank.  Clearaudio.  Acoustic Signature.  Audionet.</p>
+    </div>
+    <footer class="container">
+        <div class="footer">
+            <div>
+                <div class="left-side">
+                <a href="#" class="logo">
+                    <img src="./img/logo.svg" alt="">
+                    <img src="./img/logo-f-mb.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <p>Email</p>
+                        <a href="mailto:referenzstudio@gmail.com">referenzstudio@gmail.com</a>
+                    </li>
+                    <li>
+                        <p>Phone</p>
+                        <a href="tel:(+371) 29454104">(+371) 29454104</a>
+                        <a href="tel:(+7) 4955050407">(+7) 4955050407</a>
+                    </li>
+                    <li>
+                        <p>LCC ''REFERENZ STUDIO'' SHOWROOM</p>
+                        <a href="#">
+                            <span>Kungu street 25, Riga</span>
+                            <span>LV-1050, Latvia</span>
+                        </a>
+                    </li>
+                </ul>
+                
+
+                </div>
+                <nav>
+                    <div>
+                        <h5>меню</h5>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Категории</a></li>
+                            <li><a href="#">Бренды</a></li>
+                            <li><a href="#">Компания</a></li>
+                            <li><a href="#">Доставка</a></li>
+                             <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Обмен и возврат</a></li>
+                           
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Информация</h5>
+                        <ul>
+                            <li><a href="#">Договор публичной оферты</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            
+                            <li><a href="#">Подарочные сертификаты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-end">
+                <p><span>Referenz Studio –</span> все права защищены</p>
+                <a href="#"><span>powered by</span><span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="27" viewBox="0 0 120 27" fill="none">
+                        <path d="M52.8568 14.9444L44.2854 6.27777H39.9997V20.7222H44.2854V12.0555L52.8568 20.7222H57.1425V6.27777H52.8568V14.9444Z" fill="white"/>
+                        <path d="M117.143 6.27777H101.429V7.72221C102.543 8.84888 103.171 9.48444 104.286 10.6111H108.571V20.7222H112.857V10.6111H120V9.16666C118.886 8.03999 118.257 7.40443 117.143 6.27777Z" fill="white"/>
+                        <path d="M18.5715 9.16666V20.7222H35.7143C36.8286 19.5956 37.4572 18.96 38.5715 17.8333V6.27777H21.4286C20.3144 7.40443 19.6858 8.03999 18.5715 9.16666ZM22.8572 10.6111H34.2858V16.3889H22.8572V10.6111Z" fill="white"/>
+                        <path d="M4.28571 10.6111H14.8571L19.1428 6.27777H2.85714C1.74285 7.40443 1.11428 8.03999 0 9.16666V17.8333C1.11428 18.96 1.74285 19.5956 2.85714 20.7222H17.1428V16.3889H4.28571V10.6111Z" fill="white"/>
+                        <path d="M84.2854 6.27777V20.7222H88.5711V17.8333H97.1426V20.7222H101.428V17.8333L99.9997 16.3889C100.435 15.9483 100.871 15.5078 101.428 14.9444V9.16666C100.314 8.03999 99.6854 7.40443 98.5711 6.27777H84.2854ZM88.5711 13.5V10.6111H97.1426V13.5H88.5711Z" fill="white"/>
+                        <path d="M61.4289 23.9V26.5H64.286L78.5717 12.0555V26.5H82.8574V6.27777H78.5717L61.4289 23.9Z" fill="white"/>
+                        <path d="M79.9997 3.1V0.5H77.1426L62.8569 14.9445V0.5H58.5712V20.7222H62.8569L79.9997 3.1Z" fill="white"/>
+                        <path d="M120 17.8333H117.142V20.7222H120V17.8333Z" fill="white"/>
+                      </svg>
+                </span></a>
+            </div>
+            <a class="btn-search" href="#">наверх</a>
+        </div>
+    </footer>
+    <p id="circleMouse"></p>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

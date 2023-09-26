@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Gryphon</title>
+</head>
+<body>
+   <header >
+    <div class="container header-nav">
+      <div class="nav-box">
+          <div>
+              <a href="#" class="nav-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 29 29" fill="none">
+                  <path d="M6.0415 8.45801H22.9582" stroke="white" stroke-linecap="round"/>
+                  <path d="M6.0415 14.5H22.9582" stroke="white" stroke-linecap="round"/>
+                  <path d="M6.0415 20.542H22.9582" stroke="white" stroke-linecap="round"/>
+                </svg>
+          </a>
+          <a href="#" class="logo">
+              <img src="./img/logo.svg" alt="">
+          </a>
+          </div>
+          
+          <nav>
+              <div class="nav-mobile">
+                  <div class="top-nav-mob">
+                      <div class="container-sm">
+                          <a href="#" class="close-nav">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                              <path d="M21.75 7.25L7.25 21.75" stroke="#131214" stroke-linecap="square" stroke-linejoin="round"/>
+                              <path d="M7.25 7.25L21.75 21.75" stroke="#131214" stroke-linecap="square" stroke-linejoin="round"/>
+                          </svg>
+                      </a>
+                      </div>
+                      
+                  </div>
+                  <div class="container-sm">
+                      <ul>
+                      <li><a class="active" href="#"><span>Бренды</span> <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                              <path d="M14.5 7.25L14.5 21.75" stroke="#B7AB98" stroke-linecap="square"/>
+                              <path d="M21.75 14.5L7.25 14.5" stroke="#B7AB98" stroke-linecap="square"/>
+                            </svg>
+                      </span></a></li>
+                      <li><a href="#"><span>каталог</span> <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                              <path d="M14.5 7.25L14.5 21.75" stroke="#B7AB98" stroke-linecap="square"/>
+                              <path d="M21.75 14.5L7.25 14.5" stroke="#B7AB98" stroke-linecap="square"/>
+                            </svg>
+                      </span></a></li>
+                      <li><a href="#"><span>Компания</span> <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                              <path d="M14.5 7.25L14.5 21.75" stroke="#B7AB98" stroke-linecap="square"/>
+                              <path d="M21.75 14.5L7.25 14.5" stroke="#B7AB98" stroke-linecap="square"/>
+                            </svg>
+                      </span></a></li>
+                      <li><a href="#"><span>Контакты</span> <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                              <path d="M14.5 7.25L14.5 21.75" stroke="#B7AB98" stroke-linecap="square"/>
+                              <path d="M21.75 14.5L7.25 14.5" stroke="#B7AB98" stroke-linecap="square"/>
+                            </svg>
+                      </span></a></li>
+                  </ul>
+                  </div>
+                   
+              </div>
+             
+              
+              <ul>
+                  <li><a class="active" href="#">Бренды</a></li>
+                  <li><a href="#">каталог</a></li>
+                  <li><a href="#">Компания</a></li>
+                  <li><a href="#">Контакты</a></li>
+              </ul>
+          </nav>
+          <div class="nav-last-box">
+              <a href="#">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                      <path d="M5.19229 16.2266L13.3037 23.8464C13.5693 24.0959 13.7022 24.2207 13.8567 24.2584C13.9508 24.2813 14.0489 24.2813 14.1429 24.2584C14.2975 24.2207 14.4303 24.0959 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#B7AB98"/>
+                    </svg></span>
+                  <span>10</span>
+              </a>
+              <a href="#">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                      <path d="M9.33325 9.33301V9.33301C9.33325 6.75568 11.4226 4.66634 13.9999 4.66634V4.66634C16.5772 4.66634 18.6666 6.75568 18.6666 9.33301V9.33301" stroke="#B7AB98" stroke-linecap="round"/>
+                      <path d="M4.66675 9.33301H23.3334V17.4997C23.3334 20.7995 23.3334 22.4494 22.3083 23.4745C21.2832 24.4997 19.6332 24.4997 16.3334 24.4997H11.6667C8.36692 24.4997 6.717 24.4997 5.69187 23.4745C4.66675 22.4494 4.66675 20.7995 4.66675 17.4997V9.33301Z" stroke="#B7AB98"/>
+                    </svg></span>
+                  <span>10</span>
+              </a>
+              <ul class="lang">
+                  <li>
+                      <a href="#">
+                          <span>en</span>
+                          <span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="24" viewBox="0 0 10 24" fill="none">
+                           <path d="M4.80794 14.7695L1.09346 10.3121C0.659238 9.79109 1.02976 9 1.70803 9L8.29197 9C8.97024 9 9.34076 9.79108 8.90654 10.3121L5.19206 14.7695C5.09211 14.8895 4.90789 14.8895 4.80794 14.7695Z" fill="#EB5939"/>
+                          </svg></span>
+                      </a>
+                      <ul>
+                      <li><a href="#">ru</a></li>
+                      <li><a href="#">en</a></li>
+                  </ul>
+                  </li>
+                  
+                  
+              </ul>
+          </div>
+      </div>
+  </div>
+   </header>
+   <section class="product-block container-sm">
+    <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Gryphon Audio</a></li>
+        <li><a href="#">Усилители мощности</a></li>
+        <li><a href="#">Apex Mono</a></li>
+    </ul>
+    <div class="product-box">
+        <div class="product-slider">
+            <div class="left-slider">
+                <div thumbsSlider="" class="swiper prev-product-swiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./img/catalog/prod1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/catalog/prod2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/catalog/prod3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/catalog/prod4.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/catalog/prod1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/catalog/prod2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/catalog/prod3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/catalog/prod4.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/catalog/prod2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/catalog/prod3.png" />
+                    </div>
+                    </div>
+              </div>
+              <div class="swiper-btn-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M20 33.333L20.3536 33.6866L20 34.0401L19.6464 33.6866L20 33.333ZM19.5 8.33301C19.5 8.05687 19.7239 7.83301 20 7.83301C20.2761 7.83301 20.5 8.05687 20.5 8.33301L19.5 8.33301ZM30.3536 23.6866L20.3536 33.6866L19.6464 32.9795L29.6464 22.9795L30.3536 23.6866ZM19.6464 33.6866L9.64645 23.6866L10.3536 22.9795L20.3536 32.9795L19.6464 33.6866ZM19.5 33.333L19.5 8.33301L20.5 8.33301L20.5 33.333L19.5 33.333Z" fill="#B7AB98"/>
+                </svg>
+               </div>
+              <div class="swiper-btn-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M20 6.66699L20.3536 6.31344L20 5.95988L19.6464 6.31344L20 6.66699ZM19.5 31.667C19.5 31.9431 19.7239 32.167 20 32.167C20.2761 32.167 20.5 31.9431 20.5 31.667L19.5 31.667ZM30.3536 16.3134L20.3536 6.31344L19.6464 7.02055L29.6464 17.0205L30.3536 16.3134ZM19.6464 6.31344L9.64645 16.3134L10.3536 17.0205L20.3536 7.02055L19.6464 6.31344ZM19.5 6.66699L19.5 31.667L20.5 31.667L20.5 6.66699L19.5 6.66699Z" fill="#B7AB98" />
+                </svg>
+              </div>
+            </div>
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper product-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/catalog/prod1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/catalog/prod2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/catalog/prod3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/catalog/prod4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/catalog/prod1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/catalog/prod2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/catalog/prod3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/catalog/prod4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/catalog/prod2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/catalog/prod3.png" />
+                  </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="product-inform">
+            <div>
+              
+                <div>
+                   <h3>Apex Mono</h3>
+                    <h4>Power Amplifiers</h4>
+                    <p>Gryphon Apex: The Pinnacle of Performance</p> 
+                </div>
+                <div>
+                    <img src="./img/brend/logo-brend.png" alt="">
+                </div>
+            </div>
+            <p>It has always been Gryphon’s mission to achieve the highest possible audio performance. in terms of sheer musicality, transparency and realism. With the Gryphon Apex Mono and Apex Stereo Power Amplifiers, Gryphon Audio Designs elevates pure Class A power amplification a titanic leap above what was previously considered possible. The Gryphon Apex takes us several crucial steps closer in the never-ending quest for a more natural and convincing musical illusion. Years of experience developing the Antileon EVO and Mephisto power amplifiers, as well as ongoing research in the fields of circuit topology, component quality and reliability have culminated in the Gryphon Apex: the new flagship amplifier of the Gryphon Audio Designs brand.</p>
+            <div class="product-price">
+                <h3>1150$</h3>
+                <div>
+                    <div>
+                        <a href="#" class="count-m">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="2" viewBox="0 0 16 2" fill="none">
+                                <path d="M1 1L15 0.999999" stroke="#B7AB98" stroke-linecap="square" stroke-linejoin="round"/>
+                              </svg>
+                        </a>
+                        <input type="
+                        number" value="1">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L8 15" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                                <path d="M1 8L15 8" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                              </svg>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="white" stroke-width="0.996029"/>
+                          </svg>
+                    </a>
+                </div>
+            </div>
+            <a href="#">Купить</a>
+        </div>
+    </div>
+    <ul class="product-about">
+      <li><a id="description-box" class="active" href="#">DESCRIPTION</a></li>
+      <li><a id="features-box"  href="#">FEATURES</a></li>
+      <li><a id="specifications-box"  href="#">SPECIFICATIONS</a></li>
+      <li><a id="dowloads-box" href="#">DOWNLOADS</a></li>
+      <li><a id="clips-box"  href="#">Clips</a></li>
+    </ul>
+      <div class="description-box show product-info">
+      <p>The material specifications of the Gryphon Apex illustrate its cost-no-object design: The Gryphon Apex Mono features a staggering complement of 128 very high-current bipolar output transistors (64 per chassis), 2.080.000 μF (>2 Farad) capacitor banks (>1 Farad per chassis), four separate custom-made 2,000 VA toroidal transformers (two per chassis), all housed in a magnificently crafted, constrained-layer-damped chassis. The Gryphon Apex Stereo tips the scales at 202kg (nearly 450 pounds), while a pair of Apex Mono weigh-in at 404kg (900 pounds)!</p>
+      <p>Given the massive power reserves available at all times, Gryphon Apex amplifiers simply do not “see” the loudspeaker; in other words, Apex’ virtually limitless reservoir of power and current renders it immune to loudspeaker characteristics. No speaker load, no matter how reactive, can affect Apex’ performance. This means that Apex always delivers its ultimate sound quality, regardless of loudspeaker choice. What’s more, unlike other high-power amplifiers, Gryphon’s no-compromise, pure Class A topology offers this prodigious power combined with ultimate refinement and delicacy in musical presentation.</p>
+      <p>It is Gryphon’s fundamental philosophy that all electronics in the playback chain should strive for neutrality, neither adding nor subtracting anything from the recording, no matter how “pleasing” such distortions may be. The Gryphon Apex is by nature a product for the fortunate few who can afford such a statement: a product for the connoisseurs who seek absolute purity in the reproduction of music. In short, Apex has been created for music lovers whose respect for the musicians, producers and mastering engineers inspires them to seek the truth lurking in the original recording.</p>
+       <section class="product-feature">
+          <div class="description-item">
+        <h3>Power Is Everything</h3>
+        <div>
+          <p>In the world of High End audio amplification, this statement is literally true. With nearly 1700 Watts RMS into one Ohm (Mono), the Gryphon Apex is ready to master even the most challenging speaker loads. The Apex’ output section uses very high-current bipolar output devices which have demonstrated extreme reliability in addition to unprecedented sonic performance. These transistors can be called upon to deliver very large peak power per channel without overload. The output transistors are locally decoupled with an array of ZN film capacitors.</p>
+          <p>Apex’ driver section enjoys a separate, optimized power supply fed from individual windings on the custom-made toroidal transformers. Our unique and sophisticated mechanical design ensures optimal thermal tracking between drivers and output devices. This driver section features its own generous bank of the finest capacitors available for this application.</p>
+        </div>
+        <div>
+          <p>Apex’ power supply also utilizes capacitors especially chosen for this design. Absolutely zero global feedback is employed and DC coupling utilizes DC servo circuitry. Internal wiring in the signal path is kept to an absolute minimum. Input wiring is Gryphon Vanta single crystal solid core silver/gold cable. Balanced inputs are provided exclusively. The new and proprietary Gryphon speaker terminals accept bare wire, spade lugs, banana connectors or any combination thereof.</p>
+          <p>Unique even in this lofty price range, the Gryphon Apex utilizes a completely independent transformer and linear power supply for display and control circuits, preventing digital noise generated by these circuits from contaminating the amplifier circuits.</p>
+        </div>
+      </div>
+      <div class="description-item">
+        <h3>Pure Class A</h3>
+        <div>
+          <p>True Class A operation has always been a Gryphon hallmark. Why? Because no other circuit topology can match the sonic perfection of pure Class A. Unfortunately, true Class A is even rarer today than when we introduced the legendary DM100 in 1991. Rising consumer awareness has forced some manufacturers to make outrageous, unsubstantiated claims of Class A power ratings that have more to do with marketing than technology. There are a growing number of so-called “new” Class A topologies based on automatic biasing which supposedly allow the amplifier to sense when the bias should increase to ensure constant Class A performance!</p>
+        </div>
+        <div>
+          <p>Put bluntly, you can’t cheat physics. There are no engineering shortcuts when it comes to pure Class A, so we repeat with no apologies: TRUE, PURE CLASS A means heavy transformers, very large heatsinks, large quantities of expensive parts and costly assembly. While we appreciate and endorse every effort to conserve energy and preserve our global resources, our research into efforts to obtain Class A performance from class A/B topologies makes it clear that there simply is no substitute for the sheer magic of pure Class A.</p>
+        </div>
+      </div>
+      <div class="description-item">
+        <h3>Eternal Beauty</h3>
+        <div>
+          <p>Exquisitely wrought from the finest materials available, Apex’ gorgeous, “Nordic Noir” chassis incorporates advanced constrained-layer-damping technologies to optimize resonance, while the specification of non-magnetic materials virtually eliminates electrical interference.</p>
+        </div>
+        <div>
+          <p>In every design and construction aspect, Apex is designed to be cherished and appreciated for a lifetime. It is an amplifier whose performance is unlikely to be surpassed. Ever. Experience Apex and we are sure you will agree. Please accept our cordial invitation to visit the showroom of your nearest authorized Gryphon dealer.
+          </p>
+        </div>
+      </div>
+      </section>
+      
+      </div>
+      <div class="features-box product-info">
+        <ul>
+          <li><p>Exterior design by Flemming E. Rasmussen</p></li>
+          <li><p>Electronics design by Tom Møller</p></li>
+          <li><p>Pure Dual Mono configuration</p></li>
+          <li><p>Zero global negative feedback</p></li>
+          <li><p>128 very high current bipolar output transistors (64 per Mono channel )</p></li>
+          <li><p>2.080.000μF (>2 Farad) capacitor bank (1.040.000uF per Mono channel)</p></li>
+          <li><p>Extremely low capacitance Class A J-FET input buffer</p></li>
+          <li><p>Balanced dual differential class A input circuitry followed by a very fast symmetrical voltage amplifying Class A stage</p></li>
+          <li><p>Fully regulated low noise power supply for all voltage amplifying stages</p></li>
+          <li><p>DC servo coupling</p></li>
+          <li><p>Frequency-independent damping factor</p></li>
+          <li><p>Gryphon silver internal signal and power wiring</p></li>
+          <li><p>Premium massive Zn foil capacitors used for local power supply decoupling, with a loss factor ten-times lower than of metallized PP-film capacitors.</p></li>
+          <li><p>4-layer up to 105 um copper printed circuit boards</p></li>
+          <li><p>Four separate custom made 2000VA toroidal transformers (2 per Mono channel)</p></li>
+          <li><p>Individual decoupled left/right transformer castings</p></li>
+          <li><p>Separate linear power supply for both digital and analog circuits</p></li>
+          <li><p>Soft start turn-on prevents triggering of fuses or circuit breakers in the home electrical system</p></li>
+          <li><p>True balanced inputs with gold-plated Neutrik XLR input sockets</p></li>
+          <li><p>One Gold-plated Neutrik XLR socket input signal pass-thru for each channel</p></li>
+          <li><p>Gryphon gold-plated custom-built binding posts</p></li>
+          <li><p>AC polarity indicator</p></li>
+          <li><p>12V Link for remote power on and off</p></li>
+          <li><p>Automatic Green Bias setting via Green Bias control link or manual Low/Mid/High bias</p></li>
+          <li><p>Firmware upgradeable via USB stick</p></li>
+          <li><p>Non-intrusive protection system</p></li>
+          <li><p>Standby current consumption < 0,5W</p></li>
+          <li><p>Designed and manufactured in Denmark</p></li>
+        </ul>
+      </div>
+      <div class="specifications-box product-info">
+        <ul>
+          <li>
+            <p>1 x 225 Вт при 8 Ом, 1 x 450 Вт при 4 Ом, 1 x 880 Вт при 2 Ом и 1 x 1690 Вт при 1 Ом при 115 В/230 В переменного тока</p>
+          </li>
+          <li>
+            <p>Шум, невзвешенный 20-20 кГц:</p>
+            <p>< -80 дБВ</p>
+          </li>
+          <li>
+            <p>Шум, A-взвешенный:</p>
+            <p>< -86 дБВ</p>
+          </li>
+          <li>
+            <p>THD+N:</p>
+            <p>< 0,02%, 50 Вт при 8 Ом</p>
+          </li>
+          <li>
+            <p>IMD (DFD):</p>
+            <p>< 0,02%, 50 Вт при 8 Ом</p>
+          </li>
+          <li>
+            <p>Выходное сопротивление:</p>
+            <p>0,010 Ом</p>
+          </li>
+          <li>
+            <p>Полоса пропускания (-3 дБ):</p>
+            <p>0 от 3 Гц до 330 кГц</p>
+          </li>
+          <li>
+            <p>Усиление:</p>
+            <p>+31,0 дБ</p>
+          </li>
+          <li>
+            <p>Макс. входной уровень:</p>
+            <p>1,20 В (среднеквадратичное значение)</p>
+          </li>
+          <li>
+            <p>Входное сопротивление, симметричное (20–20 кГц):</p>
+            <p>10 кОм</p>
+          </li>
+          <li>
+            <p>Потребляемая мощность (максимум):</p>
+            <p>3700 Вт на каждый усилитель</p>
+          </li>
+          <li>
+            <p>Потребляемая мощность (в режиме ожидания):</p>
+            <p>Смещение В: 1000 Вт / Смещение С: 660 Вт / Смещение L: 320 Вт – каждый усилитель</p>
+          </li>
+          <li>
+            <p>Потребляемая мощность (в режиме ожидания):</p>
+            <p>< 0,5 Вт каждый усилитель</p>
+          </li>
+          <li>
+            <p>Входы переменного тока:</p>
+            <p>2 розетки на каждом усилителе для шнуров питания с розеткой C19</p>
+          </li>
+          <li>
+            <p>Размеры, ШxВxГ:</p>
+            <p>59,3×37,1×88,6 см, 202 кг нетто. – каждый усилитель</p>
+          </li>
+          <li>
+            <p>Транспортировочные размеры пары:</p>
+            <p>Два ящика; каждый 102 х 81 х 67 см, всего 530 кг</p>
+          </li>
+        </ul>
+      </div>
+      <div class="dowloads-box product-info">
+        <div>
+          <a href="#">
+            <span>Apex Owners Manual</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M22 23L21.6515 23.3585L22 23.6974L22.3485 23.3585L22 23ZM22.5 9C22.5 8.72386 22.2761 8.5 22 8.5C21.7239 8.5 21.5 8.72386 21.5 9L22.5 9ZM13.6515 15.5807L21.6515 23.3585L22.3485 22.6415L14.3485 14.8637L13.6515 15.5807ZM22.3485 23.3585L30.3485 15.5807L29.6515 14.8637L21.6515 22.6415L22.3485 23.3585ZM22.5 23L22.5 9L21.5 9L21.5 23L22.5 23Z" fill="white"/>
+              <path d="M11 26L11 27.6667C11 29.5076 12.4071 31 14.1429 31L29.8571 31C31.5929 31 33 29.5076 33 27.6667V26" stroke="white"/>
+            </svg></span>
+          </a>
+          <a href="#">
+            <span>Apex Setup Instructions lorem...</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M22 23L21.6515 23.3585L22 23.6974L22.3485 23.3585L22 23ZM22.5 9C22.5 8.72386 22.2761 8.5 22 8.5C21.7239 8.5 21.5 8.72386 21.5 9L22.5 9ZM13.6515 15.5807L21.6515 23.3585L22.3485 22.6415L14.3485 14.8637L13.6515 15.5807ZM22.3485 23.3585L30.3485 15.5807L29.6515 14.8637L21.6515 22.6415L22.3485 23.3585ZM22.5 23L22.5 9L21.5 9L21.5 23L22.5 23Z" fill="white"/>
+              <path d="M11 26L11 27.6667C11 29.5076 12.4071 31 14.1429 31L29.8571 31C31.5929 31 33 29.5076 33 27.6667V26" stroke="white"/>
+            </svg></span>
+          </a>
+        </div>
+      </div>
+      <div class="clips-box video-box product-info">
+        <div>
+           <video src="" poster="./img/video.png">
+            <source src="" type="video/mp4">
+          </video>
+          <a href="#"> </a>
+        </div>
+        <div class="swiper-block">
+          <div class="swiper-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M6.66699 20L6.31344 19.6464L5.95989 20L6.31344 20.3536L6.66699 20ZM31.667 20.5C31.9431 20.5 32.167 20.2761 32.167 20C32.167 19.7239 31.9431 19.5 31.667 19.5V20.5ZM16.3134 9.64645L6.31344 19.6464L7.02055 20.3536L17.0205 10.3536L16.3134 9.64645ZM6.31344 20.3536L16.3134 30.3536L17.0205 29.6464L7.02055 19.6464L6.31344 20.3536ZM6.66699 20.5L31.667 20.5V19.5L6.66699 19.5L6.66699 20.5Z" fill="#B7AB98" />
+            </svg>
+          </div>
+          <div class="swiper videoSwiper">
+          
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <video src="" poster="./img/video.png">
+                  <source src="" type="video/mp4">
+                </video>
+                <a href="#"> </a>
+              </div>
+              <div class="swiper-slide">
+                <video src="" poster="./img/video.png">
+                  <source src="" type="video/mp4">
+                </video>
+                <a href="#"> </a>
+              </div>
+              <div class="swiper-slide">
+                <video src="" poster="./img/video.png">
+                  <source src="" type="video/mp4">
+                </video>
+                <a href="#"> </a>
+              </div>
+              <div class="swiper-slide">
+                <video src="" poster="./img/video.png">
+                  <source src="" type="video/mp4">
+                </video>
+                <a href="#"> </a>
+              </div>
+              <div class="swiper-slide">
+                <video src="" poster="./img/video.png">
+                  <source src="" type="video/mp4">
+                </video>
+                <a href="#"> </a>
+              </div>
+              <div class="swiper-slide">
+                <video src="" poster="./img/video.png">
+                  <source src="" type="video/mp4">
+                </video>
+                <a href="#"> </a>
+              </div>
+              
+            </div>
+            
+          </div>
+          <div class="swiper-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M33.333 20L33.6866 19.6464L34.0401 20L33.6866 20.3536L33.333 20ZM8.33301 20.5C8.05687 20.5 7.83301 20.2761 7.83301 20C7.83301 19.7239 8.05687 19.5 8.33301 19.5V20.5ZM23.6866 9.64645L33.6866 19.6464L32.9795 20.3536L22.9795 10.3536L23.6866 9.64645ZM33.6866 20.3536L23.6866 30.3536L22.9795 29.6464L32.9795 19.6464L33.6866 20.3536ZM33.333 20.5L8.33301 20.5V19.5L33.333 19.5L33.333 20.5Z" fill="#B7AB98"/>
+            </svg>
+          </div>
+        </div>
+        
+      </div>
+      <div class="swiper-brend">
+        <div class="container">
+            <p>Вас может заинтересовать:</p>
+            <div class="swiper-btn-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                    <g opacity="1">
+                  <path d="M2 15L1.64645 14.6464L1.29289 15L1.64645 15.3536L2 15ZM27 15.5C27.2761 15.5 27.5 15.2761 27.5 15C27.5 14.7239 27.2761 14.5 27 14.5V15.5ZM11.6464 4.64645L1.64645 14.6464L2.35355 15.3536L12.3536 5.35355L11.6464 4.64645ZM1.64645 15.3536L11.6464 25.3536L12.3536 24.6464L2.35355 14.6464L1.64645 15.3536ZM2 15.5H27V14.5H2V15.5Z" fill="white"/>
+                </g>
+              </svg>
+            </div>
+            <div class="swiper galleryBrend">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                    <img src="./img/index/b.png" alt="">
+                </div>
+              <div>
+                <span>Scansonic HD</span>
+                <h4>MB6 B</h4>
+                <p>The MB6 B is the Scansonic flagship speaker. </p>
+                <button>1150$</button>
+                <div class="swiper-hover-block">
+                    <a href="#">Купить</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"/>
+                          </svg>
+                    </a>
+                </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <img src="./img/index/b.png" alt="">
+                </div>
+              <div>
+                <span>Scansonic HD</span>
+                <h4>MB6 B</h4>
+                <p>The MB6 B is the Scansonic flagship speaker. </p>
+                <button>1150$</button>
+                <div class="swiper-hover-block">
+                    <a href="#">Купить</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"/>
+                          </svg>
+                    </a>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide">
+                <div>
+                    <img src="./img/index/b.png" alt="">
+                </div>
+              <div>
+                <span>Scansonic HD</span>
+                <h4>MB6 B</h4>
+                <p>The MB6 B is the Scansonic flagship speaker. </p>
+                <button>1150$</button>
+                <div class="swiper-hover-block">
+                    <a href="#">Купить</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"/>
+                          </svg>
+                    </a>
+                </div>
+              </div>
+              
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <img src="./img/index/b.png" alt="">
+                </div>
+              <div>
+                <span>Scansonic HD</span>
+                <h4>MB6 B</h4>
+                <p>The MB6 B is the Scansonic flagship speaker. </p>
+                <button>1150$</button>
+                <div class="swiper-hover-block">
+                    <a href="#">Купить</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"/>
+                          </svg>
+                    </a>
+                </div>
+              </div>
+              
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <img src="./img/index/b.png" alt="">
+                </div>
+              <div>
+                <span>Scansonic HD</span>
+                <h4>MB6 B</h4>
+                <p>The MB6 B is the Scansonic flagship speaker. </p>
+                <button>1150$</button>
+                <div class="swiper-hover-block">
+                    <a href="#">Купить</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"/>
+                          </svg>
+                    </a>
+                </div>
+              </div>
+              
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <img src="./img/index/b.png" alt="">
+                </div>
+              <div>
+                <span>Scansonic HD</span>
+                <h4>MB6 B</h4>
+                <p>The MB6 B is the Scansonic flagship speaker. </p>
+                <button>1150$</button>
+                <div class="swiper-hover-block">
+                    <a href="#">Купить</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"/>
+                          </svg>
+                    </a>
+                </div>
+              </div>
+              
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <img src="./img/index/b.png" alt="">
+                </div>
+              <div>
+                <span>Scansonic HD</span>
+                <h4>MB6 B</h4>
+                <p>The MB6 B is the Scansonic flagship speaker. </p>
+                <button>1150$</button>
+                <div class="swiper-hover-block">
+                    <a href="#">Купить</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M5.19229 16.2266L13.3037 23.8464C13.5709 24.0974 13.7045 24.2229 13.8603 24.26C13.952 24.2819 14.0476 24.2819 14.1394 24.26C14.2952 24.2229 14.4288 24.0974 14.696 23.8464L22.8074 16.2266C25.0896 14.0827 25.3667 10.5547 23.4473 8.08074L23.0864 7.61556C20.7902 4.65601 16.1811 5.15234 14.5676 8.53292C14.3397 9.01045 13.66 9.01045 13.4321 8.53292C11.8186 5.15234 7.20951 4.656 4.91331 7.61556L4.55239 8.08074C2.63294 10.5547 2.91009 14.0827 5.19229 16.2266Z" stroke="#EB5939" stroke-width="0.996029"/>
+                          </svg>
+                    </a>
+                </div>
+              </div>
+              
+              </div>
+            </div>
+            </div>
+            <div class="swiper-btn-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                    <path d="M27 15L27.3536 14.6464L27.7071 15L27.3536 15.3536L27 15ZM2 15.5C1.72386 15.5 1.5 15.2761 1.5 15C1.5 14.7239 1.72386 14.5 2 14.5V15.5ZM17.3536 4.64645L27.3536 14.6464L26.6464 15.3536L16.6464 5.35355L17.3536 4.64645ZM27.3536 15.3536L17.3536 25.3536L16.6464 24.6464L26.6464 14.6464L27.3536 15.3536ZM27 15.5H2V14.5H27V15.5Z" fill="white"/>
+                </svg>
+            </div> 
+        </div>
+       
+    </div>
+   </section>
+   
+   <div class="string">
+    <p>Raidho.  Scansonic.  Gryphon Audio.  MBL.  Nordost.  Stromtank.  Clearaudio.  Acoustic Signature.  Audionet.  Raidho.  Scansonic.  Gryphon Audio.  MBL.  Nordost.  Stromtank.  Clearaudio.  Acoustic Signature.  Audionet.</p>
+</div>
+<footer class="container">
+  <div class="footer">
+      <div>
+          <div class="left-side">
+          <a href="#" class="logo">
+              <img src="./img/logo.svg" alt="">
+              <img src="./img/logo-f-mb.png" alt="">
+          </a>
+          <ul>
+              <li>
+                  <p>Email</p>
+                  <a href="mailto:referenzstudio@gmail.com">referenzstudio@gmail.com</a>
+              </li>
+              <li>
+                  <p>Phone</p>
+                  <a href="tel:(+371) 29454104">(+371) 29454104</a>
+                  <a href="tel:(+7) 4955050407">(+7) 4955050407</a>
+              </li>
+              <li>
+                  <p>LCC ''REFERENZ STUDIO'' SHOWROOM</p>
+                  <a href="#">
+                      <span>Kungu street 25, Riga</span>
+                      <span>LV-1050, Latvia</span>
+                  </a>
+              </li>
+          </ul>
+          
+
+          </div>
+          <nav>
+              <div>
+                  <h5>меню</h5>
+                  <ul>
+                      <li><a href="#">Главная</a></li>
+                      <li><a href="#">Категории</a></li>
+                      <li><a href="#">Бренды</a></li>
+                      <li><a href="#">Компания</a></li>
+                      <li><a href="#">Доставка</a></li>
+                       <li><a href="#">Оплата</a></li>
+                      <li><a href="#">Обмен и возврат</a></li>
+                     
+                  </ul>
+              </div>
+              <div>
+                  <h5>Информация</h5>
+                  <ul>
+                      <li><a href="#">Договор публичной оферты</a></li>
+                      <li><a href="#">Политика конфиденциальности</a></li>
+                      
+                      <li><a href="#">Подарочные сертификаты</a></li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+      <div class="footer-end">
+          <p><span>Referenz Studio –</span> все права защищены</p>
+          <a href="#"><span>powered by</span><span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="27" viewBox="0 0 120 27" fill="none">
+                  <path d="M52.8568 14.9444L44.2854 6.27777H39.9997V20.7222H44.2854V12.0555L52.8568 20.7222H57.1425V6.27777H52.8568V14.9444Z" fill="white"/>
+                  <path d="M117.143 6.27777H101.429V7.72221C102.543 8.84888 103.171 9.48444 104.286 10.6111H108.571V20.7222H112.857V10.6111H120V9.16666C118.886 8.03999 118.257 7.40443 117.143 6.27777Z" fill="white"/>
+                  <path d="M18.5715 9.16666V20.7222H35.7143C36.8286 19.5956 37.4572 18.96 38.5715 17.8333V6.27777H21.4286C20.3144 7.40443 19.6858 8.03999 18.5715 9.16666ZM22.8572 10.6111H34.2858V16.3889H22.8572V10.6111Z" fill="white"/>
+                  <path d="M4.28571 10.6111H14.8571L19.1428 6.27777H2.85714C1.74285 7.40443 1.11428 8.03999 0 9.16666V17.8333C1.11428 18.96 1.74285 19.5956 2.85714 20.7222H17.1428V16.3889H4.28571V10.6111Z" fill="white"/>
+                  <path d="M84.2854 6.27777V20.7222H88.5711V17.8333H97.1426V20.7222H101.428V17.8333L99.9997 16.3889C100.435 15.9483 100.871 15.5078 101.428 14.9444V9.16666C100.314 8.03999 99.6854 7.40443 98.5711 6.27777H84.2854ZM88.5711 13.5V10.6111H97.1426V13.5H88.5711Z" fill="white"/>
+                  <path d="M61.4289 23.9V26.5H64.286L78.5717 12.0555V26.5H82.8574V6.27777H78.5717L61.4289 23.9Z" fill="white"/>
+                  <path d="M79.9997 3.1V0.5H77.1426L62.8569 14.9445V0.5H58.5712V20.7222H62.8569L79.9997 3.1Z" fill="white"/>
+                  <path d="M120 17.8333H117.142V20.7222H120V17.8333Z" fill="white"/>
+                </svg>
+          </span></a>
+      </div>
+      <a class="btn-search" href="#">наверх</a>
+  </div>
+</footer>
+    <p id="circleMouse"></p>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
